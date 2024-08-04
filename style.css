@@ -85,7 +85,10 @@ header{
 }
 
 
-
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 /* Get Body Part Start Here.. */
 .get-body-container{
@@ -208,7 +211,7 @@ header{
     margin-right: 200px;
     margin-top: 45px;
 }
-.img-container{
+.img-container-1{
     height: 640px;
 }
 
@@ -238,4 +241,80 @@ header{
     top: 1100px;
     left: 28px;
    }
+}
+
+
+/* Change your habit Section Style Started here */
+.your-habit{
+    max-width: 1540px;
+    margin-top: 150px;
+    font-family: "Inter", sans-serif;
+    border: 2px solid red ;
+}
+
+.text-content{
+    border: 2px solid red;
+    text-align: center;
+}
+.text-content h1{
+    font: 900;
+    font-size: 3.5rem;
+    margin-top: 0px;
+}
+.text-content p{
+    font: 300;
+    font-size: 1rem;
+    margin-top: -50px;
+    font-family: "Inter", sans-serif;
+}
+.habit-img-container{
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.img-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.img-container>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid red;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container>h3{
+    font: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top:10px;
+}
+.img-container>p{
+    font: 100;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -10px;
+}
+
+@media screen and (max-width:576px) {
+   .your-habit{
+    display: flex;
+    flex-direction:column ;
+    max-width: 100%;;
+   }
+   .habit-img-container {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+   }
+    
+    
 }
