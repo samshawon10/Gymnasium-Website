@@ -318,3 +318,74 @@ main{
     
     
 }
+
+/* Extra mile part style started here */
+.extra-mile-section{
+    max-width: 1560px;
+    border: 2px solid red;
+    margin-top: 20px;
+}
+.extra-mile-container{
+    /* width: 1060px; */
+    display: flex;
+    flex-direction: row;
+    height: 360px; 
+    border: 2px solid yellow;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin-left: 130px;
+    margin-right: 130px;
+    justify-content: space-between;
+}
+.mile-img>img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 25px 40px 20px 0px;
+
+}
+
+.mile-content{
+    width: 443px;
+    height: 290px;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.mile-content h1{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 48px;
+font-weight: 900;
+}
+
+.mile-content p{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+}
+
+@media screen and (max-width:576px) {
+    .extra-mile-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    .mile-content{
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin: 0px;
+        margin-left: 45px;
+    }
+    .mile-img{
+        justify-content: center;
+        align-items: center;
+        margin-left: 45px;
+    }
+    
+}
