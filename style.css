@@ -2,7 +2,7 @@
 
 
 *{
-    background-color: black;
+    /* background-color: black; */
 }
 
 .display-flex{
@@ -388,4 +388,54 @@ font-weight: 400;
         margin-left: 45px;
     }
     
+}
+
+
+/* Excercise part style started here */
+
+.training-exercise-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 120px;
+    border: 1px solid yellow;
+}
+
+.train-img-div{
+    position: static;
+    width: 1060px;
+    height: 403px;
+}
+.training-img{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+}
+.training-img>img{
+    max-width: 100px;
+    height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bmi-table,th,td{
+    border: 1px solid black;
+}
+.bmi-table{
+    th {
+        text-align: left;
+      }
 }
