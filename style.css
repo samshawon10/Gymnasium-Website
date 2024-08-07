@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    /* background-color: black; */
+    background-color: black;
 }
 
 .display-flex{
@@ -11,15 +11,13 @@
 /* Header Part Style here ..... */
 
 header{
-    font-family: "Inter", sans-serif;
+    font-family: Inter;
     max-width: 1540px;
-    border: 2px solid darkblue;
     margin:0px 120px;
 }
 
 .header-container{
-    border: 1px solid red;
-    /* background: #fff; */
+    background: transparent;
     display: flex;
     max-width: auto;
     height: 60px;
@@ -36,6 +34,7 @@ header{
     align-items: center;
 }
 .header-container li{
+    color: rgb(255, 255, 255);
     list-style: none;
     font-size: 1.5rem;
 }
@@ -43,21 +42,21 @@ header{
     display: none;
     
 }
-.header-container h3{
-    font-family: "Poppins" sans-serif;
-    font-size: 2.5rem;
-    color: rgb(255, 69, 12);
+.header-container h1{
+    font-family: Inter;
+    font-size: 3.5rem;
+    color: rgb(230, 83, 60);
     font-style: italic;
 }
 .btn-primary{
     color: #fff;
-    background: red;
+    background: rgb(230, 83, 60);
     width: 130px;
     height: 50px;
     font: 400;
     font-size: 1.8rem;
     border-radius: 40px;
-    border-color: wheat;
+    border-color:#333;
     box-shadow:transparent;
 }
 
@@ -97,7 +96,6 @@ main{
     justify-content: space-between;
 }
 .get-body{
-    border: 2px solid red;
     margin-left: 120px;
     margin-top: 90px;
     width: 600px;
@@ -107,18 +105,20 @@ main{
 .get-body h1{
     font-size: 5rem;
     margin-top: 0px;
-    font-family: "Poppins",sans-serif;
+    font-family: Inter;
+    color: rgb(255, 255, 255);
 }
 .get-body p{
+    font-family: Inter;
+    color: rgba(255, 255, 255, 0.5);
     font:400;
-    font-family: "Poppins"sans-serif;
     font-size: 1.2rem;
     margin-top: -60px;
 }
 
 .btn-1{
-    color: #fff;
-    background: rgb(255, 69, 12);
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
     font: 800;
     font-size: 2rem;
     border-radius: 40px;
@@ -130,11 +130,18 @@ main{
 }
 .btn-2{
     background: transparent;
-    color: #333;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+
 }
 .get-body h1>span{
-    font-style: italic;
-    font-family: "Poppips";
+    font-size: 120px;
+    font-family: "Sacramento", cursive;
+    font-weight: 900;
+   
 }
 
 /* Cart 1 & 2 part started here */
@@ -151,15 +158,17 @@ main{
     background: rgba(255, 255, 255, 0.1);
 }
 .cart-1 h2{
+    font-family: Inter;
     font: 600;
     font-size: 1.8rem;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(250, 250, 249);
     background: transparent;
     margin-top: 20px;
 }
 
 .cart-1 p{
+    font-family: Inter;
     font: 200;
     font-size: 1rem;
     text-align: center;
@@ -248,20 +257,22 @@ main{
 .your-habit{
     max-width: 1540px;
     margin-top: 150px;
-    font-family: "Inter", sans-serif;
-    border: 2px solid red ;
+    font-family: Inter;
 }
 
 .text-content{
-    border: 2px solid red;
     text-align: center;
 }
 .text-content h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
     font: 900;
     font-size: 3.5rem;
     margin-top: 0px;
 }
 .text-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
     font: 300;
     font-size: 1rem;
     margin-top: -50px;
@@ -273,6 +284,7 @@ main{
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 40px;
 }
 .img-container{
     flex-direction: column;
@@ -284,18 +296,21 @@ main{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid red;
     align-items: center;
     justify-content: center;
 }
 
 .img-container>h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
     font: 300;
     font-size: 1.5rem;
     text-align: center;
-    margin-top:10px;
+    margin-top:20px;
 }
 .img-container>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
     font: 100;
     font-size: 1rem;
     text-align: center;
@@ -322,15 +337,16 @@ main{
 /* Extra mile part style started here */
 .extra-mile-section{
     max-width: 1560px;
-    border: 2px solid red;
-    margin-top: 20px;
+    /* border: 2px solid red; */
+    margin-top: 120px;
 }
 .extra-mile-container{
+    background: transparent;
     /* width: 1060px; */
     display: flex;
     flex-direction: row;
     height: 360px; 
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     border-radius: 18px;
     background: rgb(34, 34, 34);
     margin-left: 130px;
@@ -342,27 +358,32 @@ main{
     height: 312px;
     border-radius: 18px;
     margin: 25px 40px 20px 0px;
-
+}
+.mile-img{
+    background: transparent;
 }
 
 .mile-content{
+    background: transparent;
     width: 443px;
     height: 290px;
     margin-left: 40px;
     margin-top: -20px;
 }
 .mile-content h1{
+    background: transparent;
     color: rgb(255, 255, 255);
-font-family: Inter;
-font-size: 48px;
-font-weight: 900;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .mile-content p{
+    background: transparent;
     color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: 14px;
-font-weight: 400;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 @media screen and (max-width:576px) {
@@ -386,6 +407,7 @@ font-weight: 400;
         justify-content: center;
         align-items: center;
         margin-left: 45px;
+        background: transparent;
     }
     
 }
@@ -415,27 +437,322 @@ font-weight: 400;
     height: 100px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bmi-table,th,td{
-    border: 1px solid black;
+.train-text-content>h1{
+    font: 900;
+    font-size: 3.8rem;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    width: auto;
+    border: 1px solid red ;
+    margin: 0px;
 }
-.bmi-table{
-    th {
-        text-align: left;
-      }
+.train-text-content>p{
+    font: 300;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    width: auto;
+    border: 1px solid red ;
+    margin: 5px 0px;
+}
+
+
+/* bmi style started here>>>>>>> */
+
+.background-transparent{
+    background: transparent;
+}
+
+.bmi-cal{
+    margin-top: 20px;
+    max-width: 1540px;
+    height: 600px;
+    background: rgb(34, 34, 34);
+   
+}
+
+.bmi-text-content>h1{
+    background: transparent;
+    font: 900;
+    font-size: 3.8rem;
+    text-align: center;
+    width: auto;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+}
+
+.bmi-text-content>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font: 300;
+    font-size: 1rem;
+    text-align: calc(50%);
+    width: 50%;
+    margin: 5px 425px;
+    background: transparent;
+    padding-bottom: 40px;
+}
+
+
+.bmi-chart{
+    background: transparent;
+    width: 420px;
+    margin-top: 30px;
+}
+
+
+.bmi-chart>h1{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    margin: 15px 0px;
+    font: 900;
+    font-size: 2.5rem;
+    
+}
+
+.bmi-table
+{   margin-top: 40px;
+    width: 310px;
+    height: 216px;
+    
+
+}
+
+.bmi-table th,td{
+   background-color: rgb(34, 34, 34);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-table th{
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+}
+
+.calculate-bmi  {
+    background: transparent;
+   margin-left: 300px;
+   width: 577px;
+   height: 96px;
+}
+
+.calculate-bmi-content h1 {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+}
+.calculate-bmi-content p{
+
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+.calculate-bmi-form{
+    
+    width: 577px;
+    height: 168px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-top: 30px;
+}
+.calculate-bmi-form form>input,select{
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+    padding: 12px 40px 12px 20px;
+    margin: 3px;
+    margin-left: 0px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.background-color{
+    background-color: rgb(34, 34, 34);
+}
+
+.calculate-bmi>button{
+    margin-top: 20px;
+}
+
+.bmi-box{
+    margin-top: 20px;
+    background: rgb(34, 34, 34);
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+
+/* Meet Our team section style>>> */
+
+
+.meet-team{
+    max-width: 1540px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 80px;
+}
+
+.meet-team h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.meet-team p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.meet-img-div{
+    background: rgba(255, 255, 255, 0.1);
+    width: 1060px;
+    height: 620px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 18px;
+    
+}
+
+.box{
+    width: 326.67px;
+    height: 272px;
+    border: 1px solid gray;
+    border-radius: 18px;
+   background: rgba(0, 0, 0, 0.2);
+}
+
+.box h1{
+    font-size: medium;
+   font-family: Inter;
+   text-align: justify;
+   margin-top: -70px;
+   margin-left: 12px;
+}
+
+.box p{
+    font-family: Inter;
+    text-align: justify;
+    margin-left: 12px;
+}
+
+.box img {
+    width: 326.67px;
+    height: 272px;
+    border-radius: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+/* <<<<<<<footer Style Started here>>>>>>> */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 1540px;
+    height: 489px;
+}
+.footer-container{
+    margin: 66px 190px 174px 190px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: transparent;
+
+}
+footer hr{
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: -79px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    
+}
+footer p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 20px;
+    font: 400;
+    background: transparent;
+}
+
+.footer-text-1{
+    width: 600px;
+    background: transparent;
+    margin-top: 80px;
+}
+
+ .footer-text-3{
+    width: 181px;
+    height: 249px;
+    margin-top: 80px;
+    background: transparent;
+}
+.footer-text-2{
+    width: 200px;
+    height: 249px;
+    margin-top: 80px;
+    background: transparent;
+}
+
+.footer-text-1 h1{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0px;
+    font-style: italic;
+    background: transparent;
+}
+.footer-text-1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    background: transparent;
+}
+
+.footer-text-2 h1,.footer-text-3 h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    background: transparent;
+}
+
+.footer-text-2 h5, .footer-text-3 h5{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 400;
+    background: transparent;
+    margin: 10px;
 }
