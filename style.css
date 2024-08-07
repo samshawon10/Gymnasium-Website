@@ -25,6 +25,7 @@ header{
     justify-content: space-between;
 }
 
+
 .header-container>nav>ul{
     display: flex;
     flex-direction: row;
@@ -32,11 +33,15 @@ header{
     gap: 50px;
     justify-content: end;
     align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
 }
 .header-container li{
     color: rgb(255, 255, 255);
     list-style: none;
     font-size: 1.5rem;
+    margin-right: 21px;
 }
 .header-container i{
     display: none;
@@ -62,7 +67,7 @@ header{
 
 .btn-primary:hover{
     color: #fff;
-    background: rgb(5, 255, 5);
+    background: slategrey;
 }
 
 
@@ -135,8 +140,16 @@ main{
     border-radius: 42px;
     color: rgb(255, 255, 255);
     font-family: Inter;
-
 }
+
+.btn-2:hover{
+    background: slategrey;
+}
+
+.btn-1:hover{
+    background: slategrey;
+}
+
 .get-body h1>span{
     font-size: 120px;
     font-family: "Sacramento", cursive;
