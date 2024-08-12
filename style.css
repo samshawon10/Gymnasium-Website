@@ -43,10 +43,6 @@ header{
     font-size: 1.5rem;
     margin-right: 21px;
 }
-.header-container i{
-    display: none;
-    
-}
 .header-container h1{
     font-family: Inter;
     font-size: 3.5rem;
@@ -80,8 +76,8 @@ header{
         margin-left: -120px;
     }
     .header-container i{
+        max-width: 576px;
         color: #fff;
-        align-items: center;
     }
     header{
         width: 100%;
@@ -156,6 +152,17 @@ main{
     font-weight: 900;
    
 }
+.play-btn{
+    color: #fff;
+    background: transparent;
+    margin-top: -32px;
+}
+.play-btn>i{
+    background: transparent;
+    margin-left: 30px;
+}
+
+
 
 /* Cart 1 & 2 part started here */
 .cart-1{
