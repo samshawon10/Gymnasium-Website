@@ -12,7 +12,8 @@
 
 header{
     font-family: Inter;
-    max-width: 1540px;
+    /* max-width: 1540px; */
+    max-width: auto;
     margin:0px 120px;
 }
 
@@ -88,6 +89,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    max-width: auto;
 }
 
 /* Get Body Part Start Here.. */
@@ -128,6 +130,9 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+}
+.btn-1>span{
+    background: transparent;
 }
 .btn-2{
     background: transparent;
@@ -246,6 +251,7 @@ main{
 
 @media screen and (max-width:576px) {
     .get-body-container{
+        max-width: auto;
         display: flex;
         flex-direction: column;
     }
@@ -270,12 +276,17 @@ main{
     top: 1100px;
     left: 28px;
    }
+
+   .btn-1>span{
+    display: none;
+   }
 }
 
 
 /* Change your habit Section Style Started here */
 .your-habit{
-    max-width: 1540px;
+    /* max-width: 1540px; */
+    max-width: auto;
     margin-top: 150px;
     font-family: Inter;
 }
@@ -341,7 +352,7 @@ main{
    .your-habit{
     display: flex;
     flex-direction:column ;
-    max-width: 100%;;
+    max-width: auto;
    }
    .habit-img-container {
     /* display: flex;
@@ -356,7 +367,8 @@ main{
 
 /* Extra mile part style started here */
 .extra-mile-section{
-    max-width: 1560px;
+    max-width: auto;
+    /* max-width: 1560px; */
     /* border: 2px solid red; */
     margin-top: 120px;
 }
@@ -407,15 +419,18 @@ main{
 }
 
 @media screen and (max-width:576px) {
+    .extra-mile-section{
+        width: auto;
+    }
     .extra-mile-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         margin: 0px;
     }
     .mile-content{
-        width: 100%;
+        max-width: auto;
         height: 50%;
         justify-content: center;
         align-items: center;
@@ -429,6 +444,9 @@ main{
         margin-left: 45px;
         background: transparent;
     }
+    .mile-content>p{
+    width: 380px;
+    }
     
 }
 
@@ -436,7 +454,8 @@ main{
 /* Excercise part style started here */
 
 .training-exercise-section{
-    max-width: 1540px;
+    /* max-width: 1540px; */
+    max-width: auto;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -516,6 +535,21 @@ main{
     margin: 5px 0px;
 }
 
+@media screen and (max-width:576px) {
+    .training-exercise-section{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+        margin: 40px 10px;
+    }
+    .training-img{
+        display: none;
+    }
+    
+   
+}
+
 
 /* bmi style started here>>>>>>> */
 
@@ -525,7 +559,8 @@ main{
 
 .bmi-cal{
     margin-top: 20px;
-    max-width: 1540px;
+    max-width: auto;
+    /* max-width: 1540px; */
     height: 600px;
     background: rgb(34, 34, 34);
    
@@ -642,6 +677,10 @@ main{
     background-color: rgb(34, 34, 34);
 }
 
+.color-gray{
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .calculate-bmi>button{
     margin-top: 20px;
 }
@@ -653,12 +692,68 @@ main{
     margin-left: 120px;
 }
 
+@media screen and (max-width:576px) {
+    .bmi-cal{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .bmi-text-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    .bmi-text-content>h1{
+        margin-left: 0px;
+    }
+    .bmi-text-content>p{
+        margin-left: 30px;
+        width: 80%;
+    }
+    .bmi-box{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .calculate-bmi{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 0px;
+    }
+    .calculate-bmi-form{
+        margin-left: -10px;
+       width: 100%;
+        height: auto;
+    }
+    .bmi-form{
+        max-width: 60%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin: 10px;
+        gap: 10px;
+    }
+    .Factor{
+    margin-left: 0px;
+    width: 420px;
+    color: rgba(255, 255, 255, 0.3); 
+    }
+
+}
+
 
 /* Meet Our team section style>>> */
 
 
 .meet-team{
-    max-width: 1540px;
+    max-width: auto;
+    /* max-width: 1540px; */
     height: 850px;
     display: flex;
     flex-direction: column;
@@ -724,7 +819,27 @@ main{
     border-radius: 18px;
 }
 
-
+@media screen and (max-width:576px) {
+    .meet-team{
+        max-width: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 40px 20px;
+    }
+    .meet-img-div{
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        margin: 30px 0px;
+    }
+    .margin{
+        margin-top: -8px;
+    }
+}
 
 
 
@@ -736,7 +851,8 @@ main{
 /* <<<<<<<footer Style Started here>>>>>>> */
 footer {
     background: rgba(255, 255, 255, 0.1);
-    max-width: 1540px;
+    /* max-width: 1540px; */
+    max-width: auto;
     height: 489px;
 }
 .footer-container{
@@ -816,4 +932,46 @@ footer p{
     font-weight: 400;
     background: transparent;
     margin: 10px;
+}
+
+@media screen and (max-width:576px) {
+    footer{
+        max-width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-container{
+        max-width: auto;
+        height: auto;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .footer-text-1{
+        margin: 40px 20px;
+    }
+    .footer-text-1>p{
+        width: 350px;
+    }
+    .footer-text-2{
+        margin: -40px 20px;
+    }
+    .footer-text-3{
+        margin: 10px 20px;
+    }
+
+    footer>hr{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer>p{
+        margin: 20px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
 }
