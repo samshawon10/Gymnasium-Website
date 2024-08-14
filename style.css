@@ -71,17 +71,28 @@ header{
 @media screen and (max-width:576px) {
     .header-container nav{
         display: none;
+     
     }
     .header-container{
-        width: 100%;
+        width: auto;
         margin-left: -120px;
+        align-items: center;
+        gap: 250px;
+    }
+    .header-container h1{
+       
+        height: 100%;
     }
     .header-container i{
-        max-width: 576px;
         color: #fff;
+    
+        
     }
     header{
-        width: 100%;
+        width: 10%;
+    }
+    .header-container ul{
+        width: 90%;
     }
 }
 
@@ -430,7 +441,7 @@ main{
         margin: 0px;
     }
     .mile-content{
-        max-width: auto;
+        width: 90%;
         height: 50%;
         justify-content: center;
         align-items: center;
@@ -537,17 +548,44 @@ main{
 
 @media screen and (max-width:576px) {
     .training-exercise-section{
+        height: 500px;
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: 100%;
         margin: 40px 10px;
+        align-items: center;
     }
     .training-img{
-        display: none;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
     }
+    .Boxes img{
+        width:200px;
+        height: fit-content;
+        margin: 0px;
+    }
+ .train-img-div{
+    width: 100%;
     
-   
+ }
+ 
+ .train-img-box-3 , .train-img-box-6{
+    display: none;
+ }   
+ 
+ .train-img-box-2>img{
+    width: 250px;
+    margin-left: -10px ;
+ }
+   .train-img-box-4>img{
+    margin-top: -5px;
+   }
+   .train-img-box-5>img{
+    margin-top: -10px;
+    width: 250px;
+    margin-left: -10px;
+    height: 118px;
+   }
 }
 
 
@@ -698,6 +736,7 @@ main{
         height: auto;
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
     }
     .bmi-text-content {
         display: flex;
@@ -942,7 +981,7 @@ footer p{
         flex-direction: column;
     }
     .footer-container{
-        max-width: auto;
+        width: auto;
         height: auto;
         margin: 0px 0px 0px 0px;
         display: flex;
@@ -951,9 +990,11 @@ footer p{
     
 
     .footer-text-1{
+        width: 80%;
         margin: 40px 20px;
     }
     .footer-text-1>p{
+        width: 100%;
         width: 350px;
     }
     .footer-text-2{
@@ -974,4 +1015,14 @@ footer p{
         margin-left: 20px;
     }
     
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+     /* {
+        border: 1px solid red;
+    } 
+    */
 }
